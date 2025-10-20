@@ -1,7 +1,7 @@
 from mpos.apps import Activity
 import mpos.ui
 
-class Kilculator(Activity):
+class QuasiCalculator(Activity):
 
     display = None
     current_value = "0"
