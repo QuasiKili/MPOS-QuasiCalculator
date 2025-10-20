@@ -1,14 +1,14 @@
 {
-"name": "QuasiCalculator",
-"publisher": "QuasiKili",
-"short_description": "Scientific and Standard Calculator",
-"long_description": "A calculator app with both scientific and standard modes.",
-"icon_url": "https://apps.micropythonos.com/apps/com.quasikili.kilculator/icons/com.quasikili.quasicalculator_0.0.1_64x64.png",
-"download_url": "https://apps.micropythonos.com/apps/com.quasikili.kilculator/mpks/com.quasikili.quasicalculator_0.0.1.mpk",
-"fullname": "com.quasikili.quasicalculator",
-"version": "0.0.2",
-"category": "utilities",
-"activities": [
+  "name": "Quasi Calculator",
+  "publisher": "QuasiKili",
+  "short_description": "Scientific and Standard Calculator",
+  "long_description": "A calculator app with both scientific and standard modes.",
+  "icon_url": "https://apps.micropythonos.com/apps/com.quasikili.kilculator/icons/com.quasikili.quasicalculator_0.0.1_64x64.png",
+  "download_url": "https://apps.micropythonos.com/apps/com.quasikili.kilculator/mpks/com.quasikili.quasicalculator_0.0.1.mpk",
+  "fullname": "com.quasikili.quasicalculator",
+  "version": "0.0.2",
+  "category": "utilities",
+  "activities": [
     {
       "entrypoint": "assets/quasicalculator.py",
       "classname": "QuasiCalculator",
@@ -21,4 +21,3 @@
     }
   ]
 }
-
