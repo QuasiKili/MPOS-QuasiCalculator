@@ -1,5 +1,4 @@
-from mpos import Activity
-import mpos.ui
+from mpos import Activity, DisplayMetrics
 
 class QuasiCalculator(Activity):
 
@@ -63,7 +62,7 @@ class QuasiCalculator(Activity):
         self.btnm.set_map(btnm_map)
 
         # Responsive sizing - fill remaining space below display
-        self.btnm.set_size(lv.pct(100), mpos.ui.pct_of_display_height(79))
+        self.btnm.set_size(lv.pct(100), DisplayMetrics.pct_of_height(79))
         self.btnm.align(lv.ALIGN.BOTTOM_MID, 0, 0)
         self.btnm.add_event_cb(self.button_event, lv.EVENT.VALUE_CHANGED, None)
 
