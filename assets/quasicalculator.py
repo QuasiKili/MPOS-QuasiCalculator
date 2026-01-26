@@ -12,7 +12,7 @@ class QuasiCalculator(Activity):
 
     def onCreate(self):
         self.screen = lv.obj()
-        self.screen.set_style_pad_all(0, 0)
+        self.screen.set_style_pad_all(0, lv.PART.MAIN)
 
         # Display container with border
         display_cont = lv.obj(self.screen)
@@ -20,14 +20,14 @@ class QuasiCalculator(Activity):
         display_cont.align(lv.ALIGN.TOP_MID, 0, 0)
         display_cont.set_style_border_width(2, lv.PART.MAIN)
         display_cont.set_style_border_color(lv.theme_get_color_primary(None), lv.PART.MAIN)
-        display_cont.set_style_radius(0, 0)
-        display_cont.set_style_pad_all(5, 0)
+        display_cont.set_style_radius(0, lv.PART.MAIN)
+        display_cont.set_style_pad_all(5, lv.PART.MAIN)
 
         # Display label
         self.display = lv.label(display_cont)
         self.display.set_text("0")
         self.display.align(lv.ALIGN.RIGHT_MID, -5, 0)
-        self.display.set_style_text_font(lv.font_montserrat_20, 0)
+        self.display.set_style_text_font(lv.font_montserrat_20, lv.PART.MAIN)
 
         # Create initial button layout
         self.create_button_matrix()
