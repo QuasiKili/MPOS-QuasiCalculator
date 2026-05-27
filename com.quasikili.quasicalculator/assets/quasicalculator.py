@@ -1,4 +1,5 @@
 from mpos import Activity, DisplayMetrics
+import lvgl as lv
 
 class QuasiCalculator(Activity):
 
@@ -167,4 +168,3 @@ class QuasiCalculator(Activity):
             self.previous_value = None
             self.operator = None
             self.display.set_text("0")
-
